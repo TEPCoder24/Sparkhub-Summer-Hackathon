@@ -514,10 +514,6 @@ def calc():
   
   print(potential_jobs)
 
-art = PhotoImage(file="job.png")
-image = Label(window, image=art)
-image.place(x=0, y=0)
-
 def run():
   window.destroy()
   subprocess.call([sys.executable, os.path.realpath(__file__)] + sys.argv[1:])
@@ -529,8 +525,6 @@ def submit():
   calc()
   for widgets in window.winfo_children():
     widgets.destroy()
-  image = Label(window, image=art)
-  image.place(x=0, y=0)
   name = tk.Label(window, text="Career Nominator", font=("Centaur", 20), bg="#000220", fg="yellow")
   name.place(x=155, y=5)
   leave = tk.Button(window, text="QUIT", fg="black", bg="red", font=("Centaur", 12, "bold"), border=True, borderwidth=4, command=bye)
