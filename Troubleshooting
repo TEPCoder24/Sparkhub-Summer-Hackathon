@@ -1,0 +1,5 @@
+If code does not work, check below:
+1. Python is installed
+2. Tkinter is installed:
+  Open CMD or Terminal
+  pip install tkinter
